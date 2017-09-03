@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medidata.iml" filepath="$PROJECT_DIR$/.idea/modules/medidata.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/medidata-build.iml" filepath="$PROJECT_DIR$/.idea/modules/medidata-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clinicaltrialapp.iml" filepath="$PROJECT_DIR$/.idea/modules/clinicaltrialapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clinicaltrialapp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/clinicaltrialapp-build.iml" />
     </modules>
   </component>
 </project>

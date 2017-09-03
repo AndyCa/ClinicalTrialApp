@@ -9,7 +9,6 @@ trait HealthService {
   def salePrice: ApplyDiscounts = { patient =>
       patient.discount match {
         case d if d > 100 => 0
-        //TODO insurance if statement should be refactored so not written twice
         case d if d <= 0  => applyDiscount(fullPrice, discount, patient.insurance)
         case _ => {
           val patientDiscount = applyDiscount(fullPrice, patient.discount)
@@ -66,6 +65,7 @@ case object Vaccine extends HealthService {
   val name = "vaccine"
   val defaultCost = 27.50
   val discount = 0
+  val injectionPrice: BigDecimal = 15
 
   def numberOfInjections: Int = {
     val question = "How many injections would you like?"
@@ -73,13 +73,11 @@ case object Vaccine extends HealthService {
   }
 }
 
-case class Vaccine(
-   name: String = "vaccine",
-   defaultCost: BigDecimal = 27.50,
-   discount: BigDecimal = 0,
-   injections: Int = 1) extends HealthService {
-  val injectionPrice: BigDecimal = 15
-  val injectionsPrice: BigDecimal = this.injections * this.injectionPrice
+case class Vaccine(injections: Int = 1) extends HealthService {
+  val name = Vaccine.name
+  val defaultCost = Vaccine.defaultCost
+  val discount = Vaccine.discount
+  val injectionsPrice: BigDecimal = this.injections * Vaccine.injectionPrice
 
   override lazy val fullPrice: BigDecimal =
     this.defaultCost + this.injectionsPrice

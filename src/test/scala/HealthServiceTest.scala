@@ -7,8 +7,8 @@ class HealthServiceTest extends FlatSpec {
   "each vaccine injection" should "costs £15" in {
     for {i <- 1 to 10} {
       val vaccine: Vaccine = Vaccine(injections = i)
-      assert(vaccine.injectionsPrice == i * vaccine.injectionPrice)
-      assert(vaccine.fullPrice == i * vaccine.injectionPrice + vaccine.defaultCost)
+      assert(vaccine.injectionsPrice == i * Vaccine.injectionPrice)
+      assert(vaccine.fullPrice == i * Vaccine.injectionPrice + vaccine.defaultCost)
     }
 
   }

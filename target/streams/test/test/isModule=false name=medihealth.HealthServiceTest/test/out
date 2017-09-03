@@ -1,0 +1,17 @@
+[0m[[0minfo[0m] [0m[32mHealthServiceTest:[0m[0m
+[0m[[0minfo[0m] [0m[32meach vaccine injection[0m[0m
+[0m[[0minfo[0m] [0m[32m- should costs £15[0m[0m
+[0m[[0minfo[0m] [0m[32msale price[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be full price for a patient with no insurance or age discount[0m[0m
+[0m[[0minfo[0m] [0m[32msale price[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be discounted by 40% for a patient under 5[0m[0m
+[0m[[0minfo[0m] [0m[32msale price[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be discounted by 60% for a patient over 64[0m[0m
+[0m[[0minfo[0m] [0m[32msale price[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be discounted by 90% for a patient over 70[0m[0m
+[0m[[0minfo[0m] [0m[32msale price[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be discounted by a further 15% for a patient buying blood test with insurance[0m[0m
+[0m[[0minfo[0m] [0m[32ma discount[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be applied if no apply boolean is given[0m[0m
+[0m[[0minfo[0m] [0m[32ma discount[0m[0m
+[0m[[0minfo[0m] [0m[32m- should not be applied if the apply boolean is false[0m[0m

@@ -1,0 +1,12 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(medihealth.PatientTest, org.scalatest.tools.Framework$$anon$1@139a7dec, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(medihealth.HealthServiceTest, org.scalatest.tools.Framework$$anon$1@139a7dec, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(medihealth.TotalTest, org.scalatest.tools.Framework$$anon$1@139a7dec, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 2 seconds, 779 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 14[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 3, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 14, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	medihealth.PatientTest[0m
+[0m[[0mdebug[0m] [0m	medihealth.TotalTest[0m
+[0m[[0mdebug[0m] [0m	medihealth.HealthServiceTest[0m
